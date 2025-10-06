@@ -24,6 +24,29 @@ body {
     outline: none;
     text-decoration: none;  
 }
+.body .btn {
+    display: inline-block;
+    background: var(--main-color);
+    border-radius: 4rem;
+    font-size: 1.6rem;
+    font-weight: 600;
+    font-size: 1.6rem;
+    color: var(--sec-bg-color);
+    letter-spacing: 0.1rem;
+    font-weight: 600;
+    box-shadow: 0 0 1rem var(--main-color);
+    padding: 1rem 3rem;
+    width: fit-content;
+    cursor: pointer;
+}
+.body .btn a {
+    text-decoration: none;
+    color: black;
+}
+.body .btn:hover {
+    box-shadow: none;
+    transition: 0.4s ease;
+}
 /* Navbar start */
 .body .header {
     position: fixed;
@@ -69,7 +92,8 @@ body {
     color: var(--main-color);
 }
 /* Navbar end */
-/* Home */
+
+/* Home start */
 .body section {
     min-height: 100vh;
     padding: 10rem 9% 2rem;
@@ -107,29 +131,8 @@ body {
 .body .home .home-content span {
     color: var(--main-color);
 }
-.body .home .home-content .btn {
-    display: inline-block;
-    background: var(--main-color);
-    border-radius: 4rem;
-    font-size: 1.6rem;
-    font-weight: 600;
-    font-size: 1.6rem;
-    letter-spacing: 0.1rem;
-    font-weight: 600;
-    box-shadow: 0 0 1rem var(--main-color);
-    padding: 1rem 3rem;
-    width: fit-content;
-    cursor: pointer;
-}
-.body .home .home-content .btn:hover {
-    box-shadow: none;
-    transition: 0.4s ease;
-}
-.body .home .home-content .btn a {
-    text-decoration: none;
-    color: black;
-}
 /* Home content end */
+
 /* card start */
 .card{
     position: relative;
@@ -299,6 +302,7 @@ body {
 }
 /* card end */
 /* Home section end */
+
 /* About section start */
 .body .about {
     display: flex;
@@ -317,6 +321,7 @@ body {
     text-align: center;
     font-size: 4.5rem;
     line-height: 1.2;
+    margin-bottom: 2rem;
 }
 .body .about .about-content h2 span {
     color: var(--main-color);
@@ -328,26 +333,135 @@ body {
     font-size: 1.6rem;
     margin: 2rem 0 3rem;
 }
-.body .about .about-content .btn {
-    display: inline-block;
-    background: var(--main-color);
-    border-radius: 4rem;
-    font-size: 1.6rem;
-    font-weight: 600;
-    font-size: 1.6rem;
-    color: var(--sec-bg-color);
-    letter-spacing: 0.1rem;
-    font-weight: 600;
+/* about section end */
+
+/* services section start */
+.body .services {
+    background: var(--bg-color);
+    flex-direction: column;
+    text-align: center;
+}
+.body .services .heading {
+    font-size: 4.5rem;
+    line-height: 1.2;
+    margin-bottom: 2rem;
+}
+.body .services .heading span {
+    color: var(--main-color);
+}
+.body .services h2 {
+    margin-bottom: 5rem;
+}
+.body .services .services-container {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.body .services .services-container .services-box {
+    flex: 1 1 30rem;
+    background: var(--sec-bg-color);
+    padding: 3rem 2rem 4rem;
+    border-radius: 2rem;
+    text-align: center;
+    border: 2px solid var(--bg-color);
+    transition: 0.4s ease;
+}
+.body .services .services-container .services-box:hover {
+    border-color: var(--main-color);
     box-shadow: 0 0 1rem var(--main-color);
-    padding: 1rem 3rem;
-    width: fit-content;
+    transition: 0.4s ease;
+    background: var(--bg-color);
+}
+.body .services .services-container .services-box i {
+    font-size: 7rem;
+    color: var(--main-color);
+    margin-bottom: 1rem;
+}
+.body .services .services-container .services-box h3 {
+    font-size: 2.6rem;
+}
+.body .services .services-container .services-box p {
+    font-size: 1.6rem;
+    margin: 1.5rem 0 2.5rem;
+}
+/* Services section end */
+
+/* Portfolio section start */
+.body .portfolio {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background: var(--sec-bg-color);
+}
+.body .portfolio .heading {
+    font-size: 4.5rem;
+    line-height: 1.2;
+    margin-bottom: 2rem;
+}
+.body .portfolio .heading span {
+    color: var(--main-color);
+}
+.body .portfolio h2 {
+    margin-bottom: 4rem;
+}
+.body .portfolio .portfolio-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    gap: 2.5rem;
+}
+.body .portfolio .portfolio-container .portfolio-box {
+    position: relative;
+    border-radius: 2rem;
+    box-shadow: 0 0 1rem var(--bg-color);
+    overflow: hidden;
+    display: flex;
+}
+.body .portfolio .portfolio-container .portfolio-box img {
+    width: 100%;
+    transition: 0.5s ease;
+}
+.body .portfolio .portfolio-container .portfolio-box:hover img {
+    transform: scale(1.1);
+} 
+.body .portfolio .portfolio-container .portfolio-box .portfolio-layer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.1), var(--main-color));
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 4rem;
+    transform: translateY(100%);
+    transition: 0.5s ease;
     cursor: pointer;
 }
-.body .about .about-content .btn a {
-    text-decoration: none;
-    color: black;
+.body .portfolio .portfolio-container .portfolio-box:hover .portfolio-layer {
+    transform: translateY(0);
 }
-.body .about .about-content .btn:hover {
-    box-shadow: none;
-    transition: 0.4s ease;
+.body .portfolio .portfolio-container .portfolio-box .portfolio-layer h4 {
+    font-size: 3rem;
+}
+.body .portfolio .portfolio-container .portfolio-box .portfolio-layer p {
+    font-size: 1.6rem;
+    margin: 3px 0 1rem;
+}
+.body .portfolio .portfolio-container .portfolio-box .portfolio-layer a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 5rem;
+    height: 5rem;
+    background: var(--text-color);
+    border-radius: 50%;
+}
+.body .portfolio .portfolio-container .portfolio-box .portfolio-layer a i {
+    font-size: 2rem;
+    color: var(--sec-bg-color);
 }

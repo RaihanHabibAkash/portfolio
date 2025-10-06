@@ -19,9 +19,12 @@ button.addEventListener("click" , event => {
 
 
     if(toOpen){
-        user.style.backgroundColor = "#1f242d";
+        user.style.backgroundColor = mainColor;
         imgBx.style.borderColor = "white";
-        contact1.classList.remove("blur")
+        contact1.classList.remove("blur");
+        contact2.classList.remove("blur");
+        contact3.classList.remove("blur");
+        contact4.classList.remove("blur");
     }
     else{
         user.style.backgroundColor = mainColor;
