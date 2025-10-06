@@ -114,7 +114,6 @@ body {
     font-size: 1.6rem;
     font-weight: 600;
     font-size: 1.6rem;
-    color: var(--sec-bg-color);
     letter-spacing: 0.1rem;
     font-weight: 600;
     box-shadow: 0 0 1rem var(--main-color);
@@ -128,7 +127,7 @@ body {
 }
 .body .home .home-content .btn a {
     text-decoration: none;
-    color: var(--sec-bg-color);
+    color: black;
 }
 /* Home content end */
 /* card start */
@@ -299,3 +298,56 @@ body {
     transition: 0.3s;
 }
 /* card end */
+/* Home section end */
+/* About section start */
+.body .about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    background: var(--sec-bg-color);
+}
+.body .about .about-img img {
+    width: 30vw;
+    height: 70vh;
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    object-fit: cover;
+}
+.body .about .about-content .heading {
+    text-align: center;
+    font-size: 4.5rem;
+    line-height: 1.2;
+}
+.body .about .about-content h2 span {
+    color: var(--main-color);
+}
+.body .about .about-content h3 {
+    font-size: 2.6rem;
+}
+.body .about .about-content p {
+    font-size: 1.6rem;
+    margin: 2rem 0 3rem;
+}
+.body .about .about-content .btn {
+    display: inline-block;
+    background: var(--main-color);
+    border-radius: 4rem;
+    font-size: 1.6rem;
+    font-weight: 600;
+    font-size: 1.6rem;
+    color: var(--sec-bg-color);
+    letter-spacing: 0.1rem;
+    font-weight: 600;
+    box-shadow: 0 0 1rem var(--main-color);
+    padding: 1rem 3rem;
+    width: fit-content;
+    cursor: pointer;
+}
+.body .about .about-content .btn a {
+    text-decoration: none;
+    color: black;
+}
+.body .about .about-content .btn:hover {
+    box-shadow: none;
+    transition: 0.4s ease;
+}
