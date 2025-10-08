@@ -465,3 +465,81 @@ body {
     font-size: 2rem;
     color: var(--sec-bg-color);
 }
+/* Portfolio end */
+
+/* Contact Start */
+.body .contact {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.body .contact .heading {
+    font-size: 4.5rem;
+    line-height: 1.2;
+    margin-bottom: 2rem;
+}
+.body .contact .heading span {
+    color: var(--main-color);
+}
+.body .contact h2 {
+    margin-bottom: 3rem;
+}
+.body .contact form {
+    max-width: 70rem;
+    margin: 1rem auto;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+.body .contact form .input-box {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.body .contact form .input-box input, .body .contact form textarea {
+    width: 100%;
+    padding: 1.5rem;
+    font-size: 1.6rem;
+    color: var(--text-color);
+    background: var(--sec-bg-color);
+    border-radius: 8px;
+    margin: 7px 0;
+} 
+.body .contact form .input-box input {
+    width: 49%;
+}
+.body .contact form textarea {
+    resize: none;
+}
+.body .contact form .btn {
+    margin-top: 2rem;
+}
+/* Contact End */
+
+/* Footer Start */
+.body footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2rem 9%;
+    background: var(--sec-bg-color);
+}
+.body footer .footer-text p {
+    font-size: 1.6rem;
+}
+.body footer .footer-iconTop a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    background: var(--main-color);
+    border-radius: 8px;
+    transition: 0.5s ease;
+}
+.body footer .footer-iconTop a:hover {
+    box-shadow: 0 0 1rem var(--main-color);
+}
+.body footer .footer-iconTop a i {
+    font-size: 2.4rem;
+    color: var(--sec-bg-color);
+}
