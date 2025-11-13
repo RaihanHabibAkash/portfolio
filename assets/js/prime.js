@@ -17,7 +17,6 @@ const mainColor = "#0ef";
 button.addEventListener("click" , event => {
     card.classList.toggle("enable");
 
-
     if(toOpen){
         user.style.backgroundColor = mainColor;
         imgBx.style.borderColor = "white";
